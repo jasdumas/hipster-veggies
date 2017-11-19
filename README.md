@@ -1,2 +1,2 @@
 # hipster-veggies
-:carrot:
+Find Trend vegetables from Twitter :carrot:
