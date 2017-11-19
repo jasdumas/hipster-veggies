@@ -1,16 +1,24 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-hipster-veggies
-===============
 
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# hipster-veggies
 Find Select Trending Vegetables from Twitter :carrot:
 
-Analysis
-========
+# Analysis
 
 Going to use the `rtweet` library and some assorted `tidyverse` things.
-
-``` r
+```{r message=FALSE, warning=FALSE}
 library(rtweet)
 library(tidyverse)
 
@@ -18,11 +26,12 @@ twitter_token <- create_token(
 app = Sys.getenv("appname"),
 consumer_key = Sys.getenv("twitter_key"),
 consumer_secret = Sys.getenv("twitter_secret"))
+
 ```
 
 Searching for the top most recent tweets for each vegetable from the article: [7 Hipster Vegetables Most Likely to Dethrone Kale](https://spoonuniversity.com/lifestyle/7-hipster-vegetables-most-likely-to-dethrone-kale). The documentation for the query arguement to search for more words by using the 'OR' operator did not work, so multiple searches we ran.
 
-``` r
+```{r message=FALSE, warning=FALSE}
 
 radish_tweets <- search_tweets(q="radish", 
                                n = 500, 
@@ -56,9 +65,9 @@ ks_tweets <- search_tweets(q="kabocha",
 ks_tweets <- dplyr::filter(ks_tweets, lang == "en")
 ```
 
-Let's combine these data sets into one for graphing while preserving the original vegetable type by creating an additional column.
 
-``` r
+Let's combine these data sets into one for graphing while preserving the original vegetable type by creating an additional column.
+```{r}
 bs_tweets$vegetable <- "brussels sprout"
 cauliflower_tweets$vegetable <- "cauliflower"
 jimica_tweets$vegetable <- "jimica"
@@ -70,7 +79,9 @@ turnip_tweets$vegetable <- "turnip"
 all_veggies <- rbind(bs_tweets, cauliflower_tweets, jimica_tweets, ks_tweets, radish_tweets, rc_tweets, turnip_tweets)
 ```
 
-``` r
+
+
+```{r message=FALSE, warning=FALSE}
 all_veggies %>%  group_by(created_at, vegetable) %>% 
                   summarise(n = n() ) %>% 
             ggplot(., aes(x = created_at)) +
@@ -83,4 +94,5 @@ all_veggies %>%  group_by(created_at, vegetable) %>%
   )
 ```
 
-![](README-unnamed-chunk-5-1.png)
+
+
