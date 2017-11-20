@@ -4,7 +4,7 @@ hipster-veggies
 
 Find Select Trending Vegetables from Twitter :carrot:
 
-<img src="https://media.giphy.com/media/mnnJUiakh7qrS/giphy.gif" align="top|right">
+<img src="https://media.giphy.com/media/mnnJUiakh7qrS/giphy.gif" align="right">
 
 
 Analysis
