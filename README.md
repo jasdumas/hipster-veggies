@@ -107,7 +107,7 @@ fin :tada:
 Extra
 -----
 
-*Here are some other articles about **Hipster** Vegetables*:
+*Here are some other articles about Hipster Vegetables*:
 
 1.  [The 22 Most Hipster Foods On The Planet - HuffPost](https://www.huffingtonpost.com/2014/04/15/hipster-food_n_5146632.html)
 
@@ -116,4 +116,4 @@ Extra
 Contact Me
 ----------
 
-Jasmine Dumas | \[@jasdumas\](<https://twitter.com/jasdumas>) | [jasdumas.github.io](http://jasdumas.github.io/)
+Jasmine Dumas (@jasdumas) [twitter](https://twitter.com/jasdumas), [jasdumas.github.io](http://jasdumas.github.io/)
