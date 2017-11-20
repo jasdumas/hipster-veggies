@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 # hipster-veggies
 Find Select Trending Vegetables from Twitter :carrot:
 
-<img src="https://media.giphy.com/media/mnnJUiakh7qrS/giphy.gif" align="top|right">
+<img src="https://media.giphy.com/media/mnnJUiakh7qrS/giphy.gif" align="right">
 
 ## Analysis
 
@@ -120,7 +120,7 @@ _Here are some other articles about **Hipster** Vegetables_:
 
 ## Contact Me
 
-Jasmine Dumas | [@jasdumas](https://twitter.com/jasdumas) | [jasdumas.github.io](http://jasdumas.github.io/)
+Jasmine Dumas (@jasdumas) [twitter](https://twitter.com/jasdumas), [jasdumas.github.io](http://jasdumas.github.io/)
 
 
 
