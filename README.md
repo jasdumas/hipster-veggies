@@ -6,7 +6,6 @@ Find Select Trending Vegetables from Twitter :carrot:
 
 <img src="https://media.giphy.com/media/mnnJUiakh7qrS/giphy.gif" align="right">
 
-
 Analysis
 --------
 
@@ -23,7 +22,7 @@ consumer_key = Sys.getenv("twitter_key"),
 consumer_secret = Sys.getenv("twitter_secret"))
 ```
 
-Searching for the top most recent tweets for each vegetable from the article: [7 Hipster Vegetables Most Likely to Dethrone Kale](https://spoonuniversity.com/lifestyle/7-hipster-vegetables-most-likely-to-dethrone-kale). The documentation for the query arguement to search for more words by using the 'OR' operator did not work, so multiple searches we ran.
+Searching for the top most recent tweets for each vegetable from the article: [7 Hipster Vegetables Most Likely to Dethrone Kale](https://spoonuniversity.com/lifestyle/7-hipster-vegetables-most-likely-to-dethrone-kale). The documentation for the query arguement to search for more words by using the 'OR' operator did not work, so multiple searches were ran.
 
 ``` r
 
@@ -64,12 +63,12 @@ A preview of tweets about rainbow chard.
 
 ``` r
 head(rc_tweets$text)
-#> [1] "Beautiful linleyvalleypork \U0001f437 in @jamieoliver recipe for Chickpea Chard Pork, no rainbow chard so… https://t.co/0HQ7pz4z5R"                                                      
-#> [2] "Sprouting butternut, rainbow chard, bok choi, pepino #Permaculture #foodswap #vegetable #seedling waiting for chinese chives &amp; artichoke to get a wriggle on https://t.co/wqRvVTyI8w"
-#> [3] "@rnussbaum11 Give chard a second chance!!!! ESP rainbow chard!!! It’s so pretty!"                                                                                                        
-#> [4] "@rnussbaum11 Also VERY good w rainbow chard too bc w the chard you chop up the stems like celery and sauté those too and it’s sooooooooo good"                                           
-#> [5] "So these are the stems of rainbow chard, cooking in beef stock and bacon fat because.. well..… https://t.co/aJVaZwwhMZ"                                                                  
-#> [6] "Garden just provided some rainbow chard for lunch \U0001f957♥️\U0001f60a #love #santafe #photo #moments https://t.co/7Pcm6A3H3p"
+#> [1] "Try this rainbow chard, red bean and peanut stew from #15minutevegan by @Lilmissmeatfree for #worldveganmonth | #vegan #vegancooking #veganfood https://t.co/lRK5l1g3O6"                                                                                                                                                  
+#> [2] "Try this rainbow chard, red bean and peanut stew from #15minutevegan by @Lilmissmeatfree for #worldveganmonth | #vegan #vegancooking #veganfood https://t.co/TYMfgiMXGG"                                                                                                                                                  
+#> [3] "What’s for lunch today? Fancy a homemade leek &amp; rainbow \U0001f308 chard quiche? Course you do. \n#catford #lewisham #selondon #southeastlondon #goodfood #yum #quiche #smallbusiness #homemade #homecooking #hungry #foodpic #cooking #foodpics #supportsmallbusine… https://t.co/R86wsJYKWP https://t.co/koHmxL4W82"
+#> [4] "Seared Scottish scallops with butternut squash puree, rainbow chard and truffle bread crumbs - making the most out of this great seasonal produce coming in! \U0001f342 #throwback https://t.co/GeOcUlvb6r"                                                                                                               
+#> [5] "Seared Scottish scallops with butternut squash puree, rainbow chard and truffle bread crumbs - making the most out of this great seasonal produce coming in! \U0001f342 #throwback https://t.co/oky2iAPahg"                                                                                                               
+#> [6] "Someone’s been nibbling the rainbow \U0001f308 chard  #brightlights #chard #colourinthegarden #winter… https://t.co/ib3qZO4PZh"
 ```
 
 Let's combine these data sets into one for graphing while preserving the original vegetable type by creating an additional column.
@@ -107,7 +106,7 @@ fin :tada:
 Extra
 -----
 
-*Here are some other articles about Hipster Vegetables*:
+*Here are some other articles about **Hipster** Vegetables*:
 
 1.  [The 22 Most Hipster Foods On The Planet - HuffPost](https://www.huffingtonpost.com/2014/04/15/hipster-food_n_5146632.html)
 
