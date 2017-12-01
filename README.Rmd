@@ -11,14 +11,16 @@ knitr::opts_chunk$set(
 )
 
 #<!-- README.md is generated from README.Rmd. Please edit that file -->
+library(emo)
 
 ```
 
 
-# hipster-veggies
-Find Select Trending Vegetables from Twitter :carrot:
+# [hipster-veggies](https://jasdumas.github.io/hipster-veggies/)
+Find Select Trending Vegetables from Twitter `r emo::ji("carrot")`
 
-<img src="https://media.giphy.com/media/mnnJUiakh7qrS/giphy.gif" align="right">
+![](https://media.giphy.com/media/mnnJUiakh7qrS/giphy.gif)
+
 
 ## Analysis
 
@@ -91,8 +93,8 @@ all_veggies <- rbind(bs_tweets, cauliflower_tweets, jimica_tweets, ks_tweets, ra
 ```
 
 
-
-```{r veggies, message=FALSE, warning=FALSE}
+Let's plot the data to observe any trends.
+```{r veggies, fig.height=5, fig.width=7, message=FALSE, warning=FALSE}
 gg_veggies <- all_veggies %>%  group_by(created_at, vegetable) %>% 
                   summarise(n = n() ) %>% 
             ggplot(., aes(x = created_at)) +
@@ -107,7 +109,7 @@ gg_veggies
 ```
 
 
-fin :tada:
+fin `r emo::ji("tada")`
 
 ## Extra
 

@@ -1,10 +1,10 @@
 
-hipster-veggies
-===============
+[hipster-veggies](https://jasdumas.github.io/hipster-veggies/)
+==============================================================
 
-Find Select Trending Vegetables from Twitter :carrot:
+Find Select Trending Vegetables from Twitter 🥕
 
-<img src="https://media.giphy.com/media/mnnJUiakh7qrS/giphy.gif" align="right">
+![](https://media.giphy.com/media/mnnJUiakh7qrS/giphy.gif)
 
 Analysis
 --------
@@ -63,12 +63,12 @@ A preview of tweets about rainbow chard.
 
 ``` r
 head(rc_tweets$text)
-#> [1] "Try this rainbow chard, red bean and peanut stew from #15minutevegan by @Lilmissmeatfree for #worldveganmonth | #vegan #vegancooking #veganfood https://t.co/lRK5l1g3O6"                                                                                                                                                  
-#> [2] "Try this rainbow chard, red bean and peanut stew from #15minutevegan by @Lilmissmeatfree for #worldveganmonth | #vegan #vegancooking #veganfood https://t.co/TYMfgiMXGG"                                                                                                                                                  
-#> [3] "What’s for lunch today? Fancy a homemade leek &amp; rainbow \U0001f308 chard quiche? Course you do. \n#catford #lewisham #selondon #southeastlondon #goodfood #yum #quiche #smallbusiness #homemade #homecooking #hungry #foodpic #cooking #foodpics #supportsmallbusine… https://t.co/R86wsJYKWP https://t.co/koHmxL4W82"
-#> [4] "Seared Scottish scallops with butternut squash puree, rainbow chard and truffle bread crumbs - making the most out of this great seasonal produce coming in! \U0001f342 #throwback https://t.co/GeOcUlvb6r"                                                                                                               
-#> [5] "Seared Scottish scallops with butternut squash puree, rainbow chard and truffle bread crumbs - making the most out of this great seasonal produce coming in! \U0001f342 #throwback https://t.co/oky2iAPahg"                                                                                                               
-#> [6] "Someone’s been nibbling the rainbow \U0001f308 chard  #brightlights #chard #colourinthegarden #winter… https://t.co/ib3qZO4PZh"
+#> [1] "Vegan Caes sitch Rainbow chard Brussels and Napa cabbage w/ pine nut Parm recipe adopted from @thefirstmess https://t.co/YG7Ca264wC https://t.co/5cDqg1VRpR"                                                                                                                               
+#> [2] "Vegan caes sitch with rainbow chard Napa cabbage Brussels and smoky chic peas a la @thefirstmess #pinenutparm #yesbread #yesveggies https://t.co/r55ayJgUy9 https://t.co/wqGBKDl9uG"                                                                                                       
+#> [3] "#comfort grilled tri tip &amp; eggplant w/ arugula chimichurri sauce &amp; happy boy farms rainbow chard!! john_dickman _hawko @marciadorsey https://t.co/3v0clvqDUt"                                                                                                                      
+#> [4] "Did you know that rainbow chard is a mix of chard varieties, not just one plant? Visit the market today for fresh, organically grown rainbow chard from Ground Stew Farms. \U0001f308 https://t.co/O3rAQ0m0i0"                                                                             
+#> [5] "#photobomb by rainbow Swiss chard! Blue curly kale growing with chard,  basil &amp; more... all… https://t.co/MwM4xeaENo"                                                                                                                                                                  
+#> [6] "@JBGorganic will have tomatoes, fresh lettuce, beet bunches, broccoli, green cabbage, napa cabbage, carrot bunches, fennel, a bouquet of radishes, sweet potatoes, butternut squash, turnips, cilantro, dill, parsley, arugula, bok choy, braising mixed greens, rainbow chard &amp; more!"
 ```
 
 Let's combine these data sets into one for graphing while preserving the original vegetable type by creating an additional column.
@@ -84,6 +84,8 @@ turnip_tweets$vegetable <- "turnip"
 
 all_veggies <- rbind(bs_tweets, cauliflower_tweets, jimica_tweets, ks_tweets, radish_tweets, rc_tweets, turnip_tweets)
 ```
+
+Let's plot the data to observe any trends.
 
 ``` r
 gg_veggies <- all_veggies %>%  group_by(created_at, vegetable) %>% 
@@ -101,7 +103,7 @@ gg_veggies
 
 ![](README-veggies-1.png)
 
-fin :tada:
+fin 🎉
 
 Extra
 -----
