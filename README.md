@@ -117,4 +117,4 @@ Extra
 Contact Me
 ----------
 
-Jasmine Dumas (@jasdumas) [twitter](https://twitter.com/jasdumas), [jasdumas.github.io](http://jasdumas.github.io/)
+Jasmine Daly (@jasdumas) [twitter](https://twitter.com/jasdumas), [jasdumas.github.io](http://jasdumas.github.io/)
